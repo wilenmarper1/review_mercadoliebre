@@ -1,0 +1,9 @@
+main form .name,
+main form .user,
+main form .email{
+margin-top: 12px;
+}
+
+main form .email{
+  margin-bottom: 18px;
+}

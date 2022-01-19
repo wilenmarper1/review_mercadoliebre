@@ -1,0 +1,342 @@
+/* Visualizacion Mobile*/
+/*--------------------------------------------------------------------------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Estilo de body*/
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+  color: #666;
+}
+
+p {
+  font-size: 12px;
+}
+
+div.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+header {
+  background-color: #eac926;
+}
+
+header div.logo {
+  padding: 10px;
+  width: 50%;
+}
+
+header div .buscar {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 11px;
+  width: 50%;
+}
+
+div .buscar input {
+  width: 77%;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+div .buscar .boton {
+  width: 20%;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+header nav {
+  font-size: 12px;
+  margin-left: 20px;
+  display: none;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header .form .input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+
+header .form .submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+div.last-visit,
+div.offers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price {
+  font-size: 18px;
+  width: 30%;
+}
+
+.discount {
+  width: 70%;
+}
+
+.discount,
+.description {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.description {
+  color: #666;
+}
+
+.description {
+  display: none;
+  margin-top: 20px;
+  opacity: 0%;
+}
+
+.description:hover {
+  display: block;
+  opacity: 100%;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 0px;
+}
+
+main section article img {
+  width: 100%;
+}
+
+main section article i,
+.discount {
+  color: #39b54a;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+main section article i:hover {
+  transform: rotate(-90deg);
+}
+
+main section h3 {
+  margin: 20px 0px;
+}
+
+article div.main-article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  padding: 15px;
+}
+/*--------------------------------------------------------------------------*/
+/*Visualizacion Tablets*/
+/*--------------------------------------------------------------------------*/
+@media (min-width: 361px) {
+  main section article .description {
+    display: block;
+  }
+
+  main section article {
+    transition: box-shadow 450ms;
+  }
+
+  main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: box-shadow 450ms;
+  }
+
+  /*Codigo Flexbox, para que nuestro sitio web sea 100% responsive*/
+
+  main section div.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  main section div.products article {
+    width: 45%;
+  }
+
+  .price,
+  .discount {
+    width: 50%;
+  }
+
+  header nav {
+    display: block;
+  }
+  div.burger-menu i {
+    display: none;
+  }
+
+  div .buscar {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 11px;
+    width: 50%;
+  }
+
+  div .buscar input {
+    width: 80%;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  div .buscar .boton {
+    width: 15%;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+  }
+
+  nav div.nav_izquierda ul {
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav div.nav_derecha ul {
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/*--------------------------------------------------------------------------*/
+/*Visualizacion Desktop*/
+/*--------------------------------------------------------------------------*/
+@media (min-width: 769px) {
+  main section div.products article {
+    width: 22%;
+  }
+
+  .enviar:hover {
+    background-color: #0022aa;
+    color: white;
+    border: none !important;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav .side {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav .top_bar {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  div.burger-menu i {
+    display: none;
+  }
+
+  div .buscar {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 11px;
+    width: 50%;
+  }
+
+  div .buscar input {
+    width: 80%;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  div .buscar .boton {
+    width: 15%;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+}
+/*--------------------------------------------------------------------------*/
