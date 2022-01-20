@@ -1,0 +1,66 @@
+.login form input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  }
+
+.login {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+main {
+  height: auto;
+  font-size: 50px;
+}
+
+input {
+margin-bottom: 3vh;
+width: 35vw;
+padding: 4%;
+border-radius: 10px;
+border:none !important;
+outline:none;
+text-size-adjust: 12px;
+}
+
+input.enviar3{background-color:#1259c3;
+color: white;
+display:flex;
+justify-content: center;
+text-align: center;
+}
+
+.login input.enviar3:hover{background-color: #0022aa;}
+
+
+.login input:hover{background-color: #ebedf6;
+    box-shadow: inset 0 0 0 1px #08B;
+    
+}
+
+.formato .tamaño_texto{font-size: 11px;}
+
+
+/*--------------------------------------------------------------------------*/
+/*Visualizacion Tablet*/
+/*--------------------------------------------------------------------------*/
+
+@media (min-width: 361px) {
+
+    .formato .tamaño_texto{font-size: 13px;}
+}
+
+/*--------------------------------------------------------------------------*/
+/*Visualizacion Desktop*/
+/*--------------------------------------------------------------------------*/
+@media (min-width: 769px) {
+
+    .formato .tamaño_texto{font-size: 14px;}
+
+
+}
+

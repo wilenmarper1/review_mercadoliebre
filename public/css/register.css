@@ -1,9 +1,13 @@
-main form .name,
-main form .user,
-main form .email{
-margin-top: 12px;
-}
+.register form input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  }
 
-main form .email{
-  margin-bottom: 18px;
-}
+  .register {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }

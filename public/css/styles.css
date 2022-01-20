@@ -27,9 +27,10 @@ div.top-header {
 }
 
 header div.top-header p {
-  width: 100%;
-  text-align: center;
+  width: 90%;
+  text-align: right;
   margin-top: 10px;
+  
 }
 
 header {
@@ -37,7 +38,7 @@ header {
 }
 
 header div.logo {
-  padding: 10px;
+  padding-right: 10px;
   width: 50%;
 }
 
@@ -78,21 +79,6 @@ header ul li a {
   color: #000;
 }
 
-header .form .input {
-  background-color: #fff;
-  border: 1px solid #000;
-  outline: none;
-  color: #666;
-  padding: 2px;
-}
-
-header .form .submit {
-  background-color: #fff;
-  border: 1px solid #000;
-  color: #666;
-  width: 10%;
-}
-
 div.burger-menu {
   text-align: center;
 }
@@ -129,19 +115,23 @@ div.offers {
   font-weight: normal;
 }
 
-.description {
-  color: #666;
-}
 
 .description {
   display: none;
   margin-top: 20px;
   opacity: 0%;
+  color: #666;
 }
 
-.description:hover {
+main section article:hover .description {
   display: block;
   opacity: 100%;
+  margin: 10px 0px;
+}
+
+
+.register input:hover {
+  background-color: #0022aa;
 }
 
 section.banner img {
@@ -181,7 +171,10 @@ main section article i {
   top: -15px;
 }
 
-main section article i:hover {
+main section div.products article i{
+  transition: transform 1s;
+}
+main section div.products article:hover i {
   transform: rotate(-90deg);
 }
 
@@ -198,6 +191,7 @@ article div.main-article {
   position: relative;
   padding: 15px;
 }
+
 /*--------------------------------------------------------------------------*/
 /*Visualizacion Tablets*/
 /*--------------------------------------------------------------------------*/
@@ -278,6 +272,14 @@ article div.main-article {
     display: flex;
     justify-content: space-evenly;
   }
+  div.top-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
 }
 
 /*--------------------------------------------------------------------------*/
@@ -291,7 +293,6 @@ article div.main-article {
   .enviar:hover {
     background-color: #0022aa;
     color: white;
-    border: none !important;
   }
 
   header nav {
@@ -317,26 +318,32 @@ article div.main-article {
     display: none;
   }
 
-  div .buscar {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    font-size: 11px;
-    width: 50%;
-  }
-
   div .buscar input {
-    width: 80%;
+    width: 70%;
     height: 30px;
     border: 1px solid gray;
     border-radius: 5px;
+    
   }
 
   div .buscar .boton {
-    width: 15%;
+    width: 30px;
     height: 30px;
     border: 1px solid gray;
     border-radius: 5px;
+    
   }
+
+  div.top-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+   
+  }
+  main section article .description {
+    display: none;
+  }
+
 }
 /*--------------------------------------------------------------------------*/
