@@ -249,6 +249,10 @@ article div.main-article {
     border: 1px solid gray;
     border-radius: 5px;
   }
+  
+  main section article .description {
+    display: none;
+  }
 
   div .buscar .boton {
     width: 15%;
