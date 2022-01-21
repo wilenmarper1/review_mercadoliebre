@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-#pie_pagina h4 {
+#pie_pagina .texto_footer {
   font-size: 20px;
   color: #666;
 }
@@ -12,7 +12,7 @@
   color: #666;
 }
 
-h4 {
+.texto_footer {
   color: #666;
 }
 
